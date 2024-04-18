@@ -6,9 +6,15 @@ def is_prime(n):
         if n % i == 0:
             return False
     return True
-num = int(input("Enter a number: "))
-if is_prime(num):
-    print(num, 'is a prime number.')
-else:
-    print(num, 'is not a prime number.')
-4
+stop = False
+while not stop:
+    num = int(input("Enter a number (type 'stop' to exit): "))
+    if num == 0 or num == 'stop':
+        stop = True
+        break
+    if is_prime(num):
+        print(num, 'is a prime number.')
+    else:
+        print(num, 'is not a prime number.')
+
+
