@@ -10,4 +10,3 @@ while True:
         print("Even")
     else:
         print("odd")
-0
