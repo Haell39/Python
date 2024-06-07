@@ -27,3 +27,18 @@ print("\nLoop reversed negativo: ")
     
 for rneg in reversed(range(10, 0, -2)):
     print(rneg)
+    
+print("\niterate over a string: ")
+
+CreditCard = "1234-5678-9012-3456"
+for cred in CreditCard:
+    print(cred)
+    
+print("\nContinue and Break: ")
+
+for x in range(0, 15):
+    if x == 5:
+        continue
+    if x == 9:
+        break
+    print(x)
