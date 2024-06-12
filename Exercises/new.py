@@ -1,5 +1,14 @@
-def addition(a, b):
-	sum = a + b
-	return sum
+z = int( input("Type any integuer: "))
+print("Your new number is: ")
+d = z + 1
+print(d)
 
-print (addition(57,84))
+#* Transforming into func
+
+def numplus(a):
+    a = a + 1
+    return a
+
+a = int( input("Type any integuer: "))
+print("Your new number is: ")
+print(numplus(a))
