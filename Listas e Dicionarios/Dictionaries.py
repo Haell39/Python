@@ -78,6 +78,53 @@ print(car)
 #The popitem() method removes the last item in a dictionary and returns it.
 
 car.popitem()
-print(car)  #Now theres only brand
+print(car,"\n")  #Now theres only brand
+
+
+#del()
+# The del() method removes an item based on a given key.
+
+book = {'author': 'Alice', 'title': 'Alice in Wonderland',}
+
+del book['title']
+print(book ,"\n")
+
+
+#Clear --> Removes all items from the dictionary
+
+motobike = {'brand': 'Yamaha', 'model': 'YZF-R1', 'year': 2022}
+motobike.clear()
+print(motobike ,"\n")
+
+
+#Cheking keys in dictionary
+
+person = {'name': 'John', 'age': 30, 'city': 'New York'}
+
+a = 'name' in person.keys()
+b = 'John' in person.values()
+c = 'height' in person.keys()
+
+print("Checking keys in dictionary")
+print(a)
+print(b)
+print(c ,"\n")
+
+
+person2 = {'name': 'rael', 'age': 24}
+q = 'John' in person2.values()
+t = 24 in person2.values()
+
+print("Checking values in dictionary")
+print(q)
+print(t ,"\n")
+
+
+#Pretty Print
+print("Pretty Print")
+import pprint
+wife2 = {'name': 'Rose', 'age': 33, 'has_hair': True, 'hair_color': 'brown', 'height': 1.6, 'eye_color': 'brown'}
+pprint.pprint(wife2)
+
 
 
