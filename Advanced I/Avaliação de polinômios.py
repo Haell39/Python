@@ -11,4 +11,4 @@ def avalia_polinomio(coeficientes, x):
 coeficientes = [2, 3, 1, 5]
 x = 2
 resultado = avalia_polinomio(coeficientes, x)
-print(f"Polinômio avaliado em x={x}: {resultado}")  # Saída: Polinômio avaliado em x=2: 27
+print(f"Polinômio avaliado em x = {x}: {resultado}")  # Saída: Polinômio avaliado em x=2: 27
