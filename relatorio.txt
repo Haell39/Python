@@ -1,0 +1,7 @@
+----- Relatório de Veículos -----
+
+Carro 1:
+  Marca: BMW
+  Modelo: Aurus
+  Código: 47
+
