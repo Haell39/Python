@@ -1,0 +1,8 @@
+----- Relatorio de Veiculos -----
+
+Veiculo 1:
+  Tipo: Moto
+  Marca: yamaha
+  Modelo: bmx
+  Codigo: 1
+
