@@ -68,7 +68,7 @@ def info():
     valor_formatado_jpy = "¥{:,.3f}".format(valor_jpy)
     l_p_jpy["text"] = f"Cotação Iene: 1₿ = {valor_formatado_jpy}"
 
-    frame_baixo.after(1000, info)
+    frame_baixo.after(1000, info) # Atualiza a cotação a cada 1 segundo e chamando a função novamente e continuamente
 
 
 # Configurando frame em cima -----------------
