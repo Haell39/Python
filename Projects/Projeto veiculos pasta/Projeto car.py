@@ -48,6 +48,18 @@ def gerar_relatorio(veiculos):
             arquivo.write(f"  Modelo: {veiculo.modelo}\n")
             arquivo.write(f"  Codigo: {veiculo.codigo}\n\n")
     print("Relatorio gerado com sucesso em '{}'!".format(file_path))
+    
+    def atualizar_veiculo(veiculos):
+        if len(veiculos) == 0:
+            print(
+                "Nenhum veiculo registrado. Registre um veiculo antes de atualizar."
+            )
+            return
+
+        print("\nAtualizar Veiculo:")
+        print("Selecione o veiculo que deseja atualizar:")
+        for i, veiculo in enumerate(veiculos):
+            print(f"[{i + 1}] {veiculo.marca} - {veiculo.modelo} - {veiculo.codigo}")
 
 
 def main():
@@ -56,6 +68,7 @@ def main():
         print("\nMenu:")
         print("[1] Registrar Veiculo")
         print("[2] Gerar Relatorio")
+        print("[3] Atualizar veiculo")
         print("[0] Sair")
         opcao = int(input("Escolha uma opcao: "))
 
