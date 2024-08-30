@@ -1,10 +1,5 @@
 #comissão para vendedores:
 
-'''
-vendedor_id = 0
-int input(preço_unitario = 0)
-qntd_vendida = 0
-'''
 
 comissão = 5/100
 preço_unitario = float(input("Qual o preço unitario: "))
