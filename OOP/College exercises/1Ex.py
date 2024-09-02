@@ -1,4 +1,4 @@
-#Program to calculate the average stock:
+#Calcula o estoque medio:
 print("Estoque medio:")
 print("Insira as quantidades:")
 qntd_min = int(input("Quantidade minima: "))
