@@ -1,4 +1,4 @@
-#Celsius to Fahrenheit:
+#Celsius para Fahrenheit:
 
 def celsius_to_fahrenheit(celsius):
     return (celsius * 9/5) + 32 #* or return celsius * 1.8 + 32 #* or return celsius * 9/5 + 32(without parentesis)
