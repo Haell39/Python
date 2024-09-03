@@ -9,3 +9,5 @@ def fibonacci(n):
 #fução retorna o numero segundo o termo da sequencia fibbonacci
 x = int(input("Qual termo vc quer descobrir?: "))
 print(fibonacci(x))
+
+
