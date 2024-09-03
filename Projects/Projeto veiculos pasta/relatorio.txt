@@ -1,8 +1,0 @@
------ Relatorio de Veiculos -----
-
-Veiculo 1:
-  Tipo: Carro
-  Marca: honda
-  Modelo: civic
-  Codigo: 3
-
