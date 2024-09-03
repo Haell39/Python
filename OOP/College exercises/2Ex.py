@@ -1,8 +1,8 @@
 '''
-Leia a cotação do dólar
-- Leia um valor em dólares
-- Converta esse valor para Real
-- Mostre o resultado
+- Ler a cotação do dólar
+- Ler um valor em dólares
+- Converter esse valor para Real
+- Mostrar o resultado
 '''
 cot_dolar = float(input("Qual a cotação atual: "))
 valor_dolar = float(input("Qual valor do money: "))
