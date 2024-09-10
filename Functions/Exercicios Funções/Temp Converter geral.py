@@ -1,58 +1,48 @@
-# conversor de temperatura Celsius Faherenheit e Keivin:
+# Conversor de temperatura Celsius, Fahrenheit e Kelvin
 
-#C -> F:
 def celsius_to_fahrenheit(celsius):
-  return celsius * 9/5 + 32
-#C -> K:
-def celsius_to_kelvin(celsius):
-  return celsius + 273.15
-#F -> C:
-def fahrenheit_to_celsius(fahrenheit):
-  return (fahrenheit - 32) * 5/9
-#F -> K:
-def fahrenheit_to_kelvin(fahrenheit):
-  return (fahrenheit - 32) * 5/9 + 273.15
-#K -> C:
-def kelvin_to_celsius(kelvin):
-  return kelvin - 273.15
-#K -> F:
-def kelvin_to_fahrenheit(kelvin):
-  return (kelvin - 273.15) * 9/5 + 32
+    return celsius * 9/5 + 32
 
-#Parte para o usuario escolher a conversão:
+def celsius_to_kelvin(celsius):
+    return celsius + 273.15
+
+def fahrenheit_to_celsius(fahrenheit):
+    return (fahrenheit - 32) * 5/9
+
+def fahrenheit_to_kelvin(fahrenheit):
+    return (fahrenheit - 32) * 5/9 + 273.15
+
+def kelvin_to_celsius(kelvin):
+    return kelvin - 273.15
+
+def kelvin_to_fahrenheit(kelvin):
+    return (kelvin - 273.15) * 9/5 + 32
+
+# Parte para o usuário escolher a conversão
+conversions = {
+    "1": ("Celsius para Fahrenheit", celsius_to_fahrenheit),
+    "2": ("Celsius para Kelvin", celsius_to_kelvin),
+    "3": ("Fahrenheit para Celsius", fahrenheit_to_celsius),
+    "4": ("Fahrenheit para Kelvin", fahrenheit_to_kelvin),
+    "5": ("Kelvin para Celsius", kelvin_to_celsius),
+    "6": ("Kelvin para Fahrenheit", kelvin_to_fahrenheit)
+}
+
 print("Escolha a conversão que deseja fazer:")
-print("1 - Celsius para Fahrenheit")
-print("2 - Celsius para Kelvin")
-print("3 - Fahrenheit para Celsius")
-print("4 - Fahrenheit para Kelvin")
-print("5 - Kelvin para Celsius")
-print("6 - Kelvin para Fahrenheit")
+for key, (description, _) in conversions.items():
+    print(f"{key} - {description}")
 
 choice = input("Digite o número da conversão que deseja fazer: ")
 
-#Parte para o usuario digitar a temperatura:
-if choice == "1":
-  celsius = float(input("Digite a temperatura em Celsius: "))
-  print(celsius_to_fahrenheit(celsius))
-  
-if choice == "2":
-    celsius = float(input("Digite a temperatura em Celsius: "))
-    print(celsius_to_kelvin(celsius))
-
-if choice == "3":
-    fahrenheit = float(input("Digite a temperatura em Fahrenheit: "))
-    print(fahrenheit_to_celsius(fahrenheit))
-
-if choice == "4":
-    fahrenheit = float(input("Digite a temperatura em Fahrenheit: "))
-    print(fahrenheit_to_kelvin(fahrenheit))
-
-if choice == "5":
-    kelvin = float(input("Digite a temperatura em Kelvin: "))
-    print(kelvin_to_celsius(kelvin))
-
-if choice == "6":
-    kelvin = float(input("Digite a temperatura em Kelvin: "))
-    print(kelvin_to_fahrenheit(kelvin))
-
-
+# Parte para o usuário digitar a temperatura
+if choice in conversions:
+    description, func = conversions[choice]
+    if "Celsius" in description:
+        temp = float(input("Digite a temperatura em Celsius: "))
+    elif "Fahrenheit" in description:
+        temp = float(input("Digite a temperatura em Fahrenheit: "))
+    else:
+        temp = float(input("Digite a temperatura em Kelvin: "))
+    print(func(temp))
+else:
+    print("Opção inválida!")
