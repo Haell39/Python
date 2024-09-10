@@ -13,3 +13,5 @@ def binary_search(arr, target):
 # Chamada de exemplo
 arr = [1, 2, 3, 4, 5, 6, 7]
 print(binary_search(arr, 4))  # Saída: 3
+'
+'
