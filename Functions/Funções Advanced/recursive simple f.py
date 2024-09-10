@@ -9,4 +9,5 @@ def recursive(n):
 
 n = int(input("Choose a number: "))
 
-print(recursive(n))
+print(f'The {n}th number of the Fibo sequence is: {recursive(n)}')
+
