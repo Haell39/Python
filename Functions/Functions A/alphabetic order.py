@@ -6,3 +6,4 @@ def ordenar_palavras(frase):
 # Exemplo de uso:
 frase =input("Say your text:")
 print(f'Palavras ordenadas: {ordenar_palavras(frase)}')
+
