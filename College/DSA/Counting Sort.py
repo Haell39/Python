@@ -40,6 +40,6 @@ def countSortNumbers(arr):
     return arr
 
 # Example for sorting numbers
-array = [3, 1, 1, 2, 6, 2, 4, 3, 6, 0]
+array = [4,6,6,2,0,3,5,1,1,2]
 sorted_array = countSortNumbers(array)
 print("\nSorted number array is:", sorted_array)
