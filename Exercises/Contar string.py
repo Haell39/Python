@@ -2,4 +2,4 @@
 
 frase = input("Escreva uma frase: ")
 print("The length of the string is: ")
-print(len(frase))
+print(len(frase) )
